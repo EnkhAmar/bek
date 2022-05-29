@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->foreignId("khoroo")->constrained("khoroo");
+            // $table->unique("name", "khoroo");
         });
     }
 

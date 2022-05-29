@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('family', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("appartment")->constrained("appartment");
+            $table->foreignId("appartment")->nullable()->constrained("appartment");
             $table->integer("door");
             $table->integer("goodman")->nullable();
         });

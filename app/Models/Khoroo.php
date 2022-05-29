@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Khoroo extends Model
 {
     use HasFactory;
+    
+    protected $table = "khoroo";
+	protected $fillable = [
+		"name",
+	];
+    public $timestamps = false;
+
 }

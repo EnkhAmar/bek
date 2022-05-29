@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string("first_name");
             $table->string("gender");
             $table->date("dob");
-            $table->foreignId("family")->constrained("family");
+            $table->foreignId("family")->nullable()->constrained("family");
         });
     }
 
